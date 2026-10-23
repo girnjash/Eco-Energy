@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07130e">
+  <meta name="description" content="An environmental studies project exploring waste-to-energy technology and sustainable waste management.">
+  <title>EcoVolt — Waste to Energy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="navbar">
+    <a href="#home" class="brand"><span class="brand-icon">✳</span> ECOVOLT<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navLinks"><a href="#problem">The Problem</a><a href="#process">The Process</a><a href="#benefits">Impact</a><a href="#calculator">Calculator</a></nav>
+    <a href="#process" class="nav-cta">Explore the solution <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="live-dot"></span> ENVIRONMENTAL STUDIES PROJECT</div>
+        <h1>Waste isn't<br>the end of the<br>story. <span>It's energy.</span></h1>
+        <p class="hero-copy">What if the waste we throw away every day could power our tomorrow? Discover how waste-to-energy technology transforms discarded materials into electricity, heat and biogas.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#process">Discover the process <span>↘</span></a><a class="text-link" href="#problem">Why it matters <span>→</span></a></div>
+        <div class="hero-note"><span class="note-icon">♧</span><span>RETHINK WASTE. REIMAGINE TOMORROW.</span></div>
+      </div>
+      <div class="hero-visual reveal"><div class="image-frame">
+        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1100&q=85" alt="Electricity infrastructure at dusk">
+        <div class="image-overlay"></div>
+        <div class="floating-label label-top"><span class="label-symbol">↗</span><span><strong>Waste → Energy</strong><small>A smarter cycle</small></span></div>
+        <div class="floating-label label-bottom"><span class="energy-orb">✳</span><span><strong>POWER A BETTER FUTURE</strong><small>Small changes. Lasting impact.</small></span></div>
+        <div class="image-caption">01 / A CIRCULAR FUTURE</div>
+      </div><div class="hero-ring"></div></div>
+      <div class="hero-bottom"><span>01 — INTRODUCTION</span><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span></div>
+    </section>
+    <section class="intro section" id="problem">
+      <div class="section-kicker reveal">01 / THE CHALLENGE</div>
+      <div class="intro-grid"><h2 class="reveal">Our waste problem<br>is also an <span>opportunity.</span></h2>
+        <div class="intro-text reveal"><p>Growing cities produce enormous amounts of waste. When it is dumped in landfills or burned without proper controls, it can pollute air, soil and water, while releasing greenhouse gases.</p><p>Waste-to-energy offers another option: recover useful energy from suitable waste that cannot be prevented, reused or recycled.</p><a class="text-link" href="#process">See how it works <span>→</span></a></div>
+      </div>
+      <div class="problem-cards">
+        <article class="problem-card reveal"><span class="card-number">01</span><span class="card-icon">⌁</span><h3>Growing landfills</h3><p>Disposing of mixed waste takes up land and can create long-term environmental problems.</p><span class="card-tag">LAND & SOIL</span></article>
+        <article class="problem-card reveal"><span class="card-number">02</span><span class="card-icon">〰</span><h3>Pollution risks</h3><p>Poor waste handling can contaminate water and release harmful air pollutants.</p><span class="card-tag">AIR & WATER</span></article>
+        <article class="problem-card reveal"><span class="card-number">03</span><span class="card-icon">ϟ</span><h3>Lost resources</h3><p>Discarded organic matter and other suitable waste may contain recoverable energy.</p><span class="card-tag">ENERGY RECOVERY</span></article>
+      </div>
+    </section>
+    <section class="process-section section" id="process">
+      <div class="section-kicker reveal">02 / THE TECHNOLOGY</div><div class="section-heading reveal"><h2>From discarded<br>to <span>reimagined.</span></h2><p>A closer look at the journey from waste to usable energy.</p></div>
+      <div class="process-layout"><div class="process-list">
+        <button class="process-step active reveal" data-step="0"><span class="step-no">01</span><span class="step-body"><strong>Collection & sorting</strong><small>Separate recyclable, organic and residual waste.</small></span><span class="step-arrow">↗</span></button>
+        <button class="process-step reveal" data-step="1"><span class="step-no">02</span><span class="step-body"><strong>Waste processing</strong><small>Prepare suitable waste for a chosen technology.</small></span><span class="step-arrow">↗</span></button>
+        <button class="process-step reveal" data-step="2"><span class="step-no">03</span><span class="step-body"><strong>Energy conversion</strong><small>Generate heat, electricity or biogas.</small></span><span class="step-arrow">↗</span></button>
+        <button class="process-step reveal" data-step="3"><span class="step-no">04</span><span class="step-body"><strong>Recovery & monitoring</strong><small>Manage residues and control emissions safely.</small></span><span class="step-arrow">↗</span></button>
+      </div><div class="process-display reveal">
+        <img id="processImage" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=85" alt="Waste recycling and sorting"><div class="process-image-shade"></div>
+        <div class="process-overlay"><span class="process-pill"><span class="live-dot"></span> THE TRANSFORMATION</span><h3 id="processTitle">Start with smarter sorting.</h3><p id="processDescription">Separate recyclable materials first. Only suitable residual waste should be considered for energy recovery.</p></div>
+        <div class="process-counter"><span id="processCurrent">01</span> <span class="counter-divider">/</span> 04</div>
+      </div></div>
+      <div class="tech-strip reveal"><div><span class="tech-icon">ϟ</span><span><strong>Combustion</strong><small>Heat and electricity</small></span></div><div><span class="tech-icon">◉</span><span><strong>Anaerobic digestion</strong><small>Biogas from organic waste</small></span></div><div><span class="tech-icon">↗</span><span><strong>Landfill gas recovery</strong><small>Capture and use gas</small></span></div></div>
+    </section>
+    <section class="benefits section" id="benefits"><div class="section-kicker reveal">03 / THE IMPACT</div>
+      <div class="impact-grid"><div class="impact-copy reveal"><h2>A cleaner cycle<br>starts with <span>us.</span></h2><p>Waste-to-energy is one part of responsible waste management—not a replacement for reducing, reusing and recycling. Its benefits depend on the technology, waste composition and environmental safeguards.</p><a href="#action" class="button button-primary">Be part of the change <span>↘</span></a></div>
+      <div class="impact-stats">
+        <article class="stat-card reveal"><span class="stat-icon">ϟ</span><strong>Energy</strong><p>Recover usable energy from suitable residual waste.</p><span class="stat-index">BENEFIT 01</span></article>
+        <article class="stat-card reveal"><span class="stat-icon">♧</span><strong>Resource recovery</strong><p>Recover metals and use digestate appropriately where safe.</p><span class="stat-index">BENEFIT 02</span></article>
+        <article class="stat-card reveal"><span class="stat-icon">◎</span><strong>Better disposal</strong><p>Reduce the volume of some residual waste sent to landfills.</p><span class="stat-index">BENEFIT 03</span></article>
+        <article class="stat-card reveal"><span class="stat-icon">⌁</span><strong>Smarter cities</strong><p>Support integrated systems for sorting, collection and recovery.</p><span class="stat-index">BENEFIT 04</span></article>
+      </div></div>
+    </section>
+    <section class="calculator-section section" id="calculator"><div class="section-kicker reveal">04 / EXPLORE THE NUMBERS</div>
+      <div class="calculator-grid"><div class="calculator-copy reveal"><h2>Imagine the energy<br>in your <span>waste.</span></h2><p>Adjust the amount of suitable residual waste to explore a simplified energy estimate. Actual output depends on the waste and facility.</p><div class="calc-note"><span>ⓘ</span>This is an illustrative model, not a measured plant output.</div></div>
+      <div class="calculator-card reveal"><label for="wasteRange">Residual waste processed per day</label><div class="range-value"><strong id="wasteValue">100</strong><span>tonnes / day</span></div><input type="range" id="wasteRange" min="10" max="500" step="10" value="100"><div class="range-labels"><span>10 tonnes</span><span>500 tonnes</span></div><div class="calc-divider"></div><label>Estimated electricity output</label><div class="result-value"><strong id="energyValue">50,000</strong><span>kWh / day</span></div><div class="result-bar"><span id="resultBar"></span></div><p class="calc-footnote">Illustrative assumption: 500 kWh of net electricity per tonne processed. This varies widely by technology and feedstock.</p><button class="button button-primary calc-button" id="resetCalc">Reset calculator <span>↺</span></button></div></div>
+    </section>
+    <section class="action-section section" id="action"><div class="action-card reveal"><div class="action-decoration">✳</div><div class="section-kicker">05 / YOUR ROLE</div><h2>The future isn't<br>thrown away. <span>It's built.</span></h2><p>Technology can help—but the most sustainable waste is the waste we never create.</p><div class="action-points"><span><i>01</i> Refuse what you don't need</span><span><i>02</i> Reuse and repair</span><span><i>03</i> Sort waste correctly</span><span><i>04</i> Recycle and compost</span></div><a href="#home" class="button button-light">Back to the beginning ↑</a></div></section>
+  </main>
+  <footer class="footer"><a href="#home" class="brand"><span class="brand-icon">✳</span> ECOVOLT<span class="brand-dot">.</span></a><p>An Environmental Studies Project</p><span>THINK GREEN. LIVE CLEAN. © <span id="year"></span></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
